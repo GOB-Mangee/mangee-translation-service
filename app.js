@@ -14,4 +14,5 @@ const translateRoute = require('./routes/translate');
 app.use('/translate', translateRoute);
 
 
+console.log("Listening on port " + process.env.PORT)
 app.listen(process.env.PORT);

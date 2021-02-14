@@ -11,6 +11,7 @@ router.post('/', (req, res) =>{
         res.json({result: result.text});
     }).catch(err => {
         console.error(err);
+        res.status(500).send(err);
     });
     
 });
